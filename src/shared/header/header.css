@@ -1,0 +1,20 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-logo{
+    flex: 3;
+}
+
+.header-logo-img{
+    height: 10vh;
+}
+
+.header-heading{
+    flex: 1;
+    text-align: center;
+}

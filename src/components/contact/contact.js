@@ -3,9 +3,9 @@ import emailjs from 'emailjs-com';
 import { useInView } from 'react-intersection-observer';
 import "./contact.css";
 
-import phoneImg from "../../assests/Icons/phone.png";
-import emailImg from "../../assests/Icons/email.png";
-import locationImg from "../../assests/Icons/location.png";
+import phoneImg from "../../assests/svg/phone.svg";
+import emailImg from "../../assests/svg/email.svg";
+import locationImg from "../../assests/svg/location.svg";
 
 const Contact = () => {
     const [formData, setFormData] = useState({

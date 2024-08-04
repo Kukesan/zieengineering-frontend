@@ -1,24 +1,79 @@
-.header-container{
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
     display: flex;
     align-items: center;
-    height: 10vh;
+    justify-content: space-between;
+    margin: auto;
     width: 80%;
-    margin: 0 auto;
 }
 
-.header-logo{
-    flex: 3;
+.navbar-logo img {
+    height: 50px;
 }
 
-.header-logo-img{
-    height: 7vh;
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
 }
 
-.header-heading{
-    flex: 1;
-    text-align: center;
+.navbar-toggle-icon {
+    font-size: 24px;
 }
 
-.australia-img{
-    height: 5vh;
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 2.5vw;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    color: #007BFF;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        width: 40%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.mobile {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+        text-align: center;
+    }
 }

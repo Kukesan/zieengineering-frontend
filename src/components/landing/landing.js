@@ -8,7 +8,7 @@ export default function Landing ({scrollToSection}) {
             </div>
             <div className="text-section">
                 <div className="text-box">
-                    <h2 className="landing-sub-title">C N C</h2>
+                    <h2 className="landing-sub-title">100% Australian Product</h2>
                     <h1 className="landing-title">Precision CNC Machining Services: Quality and Innovation at Every Turn</h1>
                     <p className="landing-description">
                         At Zie Engineering, we excel in delivering high-quality, precise, and innovative CNC machined parts that meet the diverse needs of our clients.

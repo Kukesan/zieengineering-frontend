@@ -1,0 +1,132 @@
+/* Custom fade-up animation */
+@keyframes customFadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Custom fade-right animation */
+@keyframes customFadeRight {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Custom fade-left animation */
+@keyframes customFadeLeft {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations when the animate class is added */
+.animate .fade-up {
+    animation: customFadeUp 1.5s ease-in-out;
+}
+
+.animate .fade-right {
+    animation: customFadeRight 1.5s ease-in-out;
+}
+
+.animate .fade-left {
+    animation: customFadeLeft 1.5s ease-in-out;
+}
+
+/* Other styles */
+.about-container {
+    text-align: center;
+    width: 70%;
+    margin: 10vh auto;
+    display: block;
+    background-color:#F6F6F6;
+}
+
+.about-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.read-more-button {
+    background-color: #DD3C3B;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 31%;
+    margin: 10px 0;
+    height: 46vh;
+    border-radius: 15px;
+}
+
+.center-image {
+    margin-top: 12vh;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .about-container {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 31%;
+        height: 40vh;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .about-container {
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 14px;
+    }
+
+    .about-heading {
+        font-size: 22px;
+    }
+
+    .about-description {
+        font-size: 14px;
+        width: 98%;
+    }
+
+    .about-image {
+        width: 31%;
+        height: 24vh;
+    }
+
+    .center-image {
+        margin-top: 8vh;
+    }
+}

@@ -30,14 +30,15 @@
     margin-right: 20px;
 }
 
-.form-description {
-    color: #090909 !important;
-    margin-bottom: 20px;
+.form-title{
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-.form-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.form-description {
+    color: #090909 !important;
+    margin-bottom: 40px;
+    font-size: 16px;
 }
 
 .form-group {
@@ -109,6 +110,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 10%;
+    margin-top: 100px;
 }
 
 .info-item {
@@ -152,6 +154,6 @@
     }
 
     .contact-info {
-        margin-left: 0;
+        margin-left: 10px;
     }
 }

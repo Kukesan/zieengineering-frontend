@@ -1,0 +1,109 @@
+.services-container {
+    background-image: url('../../assests/svg/serviceBg.svg');
+    padding: 40px 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-title {
+    font-size: 32px;
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+    color: #F6F6F6;
+    margin-top: 180px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-item {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    flex: 1 1 48%; /* Take up nearly half of the parent div in web and tab views */
+    box-sizing: border-box;
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #34c759;
+}
+
+.service-content {
+    margin-left: 20px;
+}
+
+.service-content-title {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #F6F6F6;
+}
+
+.service-content-description {
+    font-size: 16px;
+    color: #F6F6F6;
+}
+
+/* Custom fade-up animation */
+@keyframes customFadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations when the animate class is added */
+.animate .fade-up {
+    animation: customFadeUp 1s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .services-container {
+       padding: 20px 0;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .services-container {
+        padding: 20px 0;
+        background-position: 40%;
+        height: fit-content;
+     }
+    .services-title {
+        font-size:24px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-item {
+        flex: 1 1 100%; /* Take up full width of the parent div */
+    }
+
+    .service-icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

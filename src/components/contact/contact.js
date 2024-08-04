@@ -75,10 +75,9 @@ export default function Contact () {
 
     return (
         <div className={`contact ${contactInView ? 'animate' : ''}`} ref={contactRef}>
-            <h1 className="contact-title">Get in touch with us</h1>
             <div className="contact-container">
                 <div className="form-section">
-                    <h2>Drop us a message</h2>
+                    <h2 className='form-title'>Drop us a message</h2>
                     <p className="form-description">We will get back to you as soon as possible.</p>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">

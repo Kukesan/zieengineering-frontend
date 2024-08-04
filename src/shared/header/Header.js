@@ -3,7 +3,7 @@ import './header.css';
 import logoSvg from '../../assests/png/landingLogo.png';
 import australiaImg from '../../assests/png/australia.png';
 
-const Header = () => {
+export default function Header(){
   return (
     <header>
       <div className="header-container">
@@ -16,5 +16,3 @@ const Header = () => {
     </header>
   );
 }
-
-export default Header;

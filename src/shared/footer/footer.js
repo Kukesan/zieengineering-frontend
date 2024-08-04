@@ -7,7 +7,7 @@ import twitterSvg from '../../assests/svg/twitter.svg';
 import linkedinSvg from '../../assests/svg/linkedin.svg';
 import instagramSvg from '../../assests/svg/instagram.svg';
 
-const Footer = () => {
+export default function Footer () {
     const { ref: headerRef, inView: headerInView } = useInView({
         triggerOnce: true,
         threshold: 0.1,
@@ -44,5 +44,3 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;

@@ -7,7 +7,7 @@ import phoneImg from "../../assests/svg/phone.svg";
 import emailImg from "../../assests/svg/email.svg";
 import locationImg from "../../assests/svg/location.svg";
 
-const Contact = () => {
+export default function Contact () {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -172,6 +172,4 @@ const Contact = () => {
             </div>
         </div>
     );
-}
-
-export default Contact;
+};

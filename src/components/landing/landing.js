@@ -1,7 +1,7 @@
 import React from "react";
 import "./landing.css";
 
-const Landing = ({scrollToSection}) => {
+export default function Landing ({scrollToSection}) {
     return (
         <div className="container">
             <div className="image-section">
@@ -19,5 +19,3 @@ const Landing = ({scrollToSection}) => {
         </div>
     );
 };
-
-export default Landing;

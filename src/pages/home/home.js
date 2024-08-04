@@ -4,7 +4,7 @@ import Contact from "../../components/contact/contact";
 import Footer from "../../shared/footer/footer";
 import Header from "../../shared/header/Header";
 
-const Home = () => {
+export default function Home () {
     const contactRef = useRef(null);
 
     const scrollToSection = (section) => {
@@ -27,5 +27,3 @@ const Home = () => {
         </>
     );
 };
-
-export default Home;

@@ -147,6 +147,7 @@ const Contact = () => {
                         <img className="info-icon" src={phoneImg} alt="Phone" />
                         <div>
                             <p>0469 768 409</p>
+                            <p>0286 064 198</p>
                             <span>Free support</span>
                         </div>
                     </div>
@@ -162,7 +163,9 @@ const Contact = () => {
                         <div>
                             <p>Unit 7, 17A </p>
                             <p>Amax Ave</p>
-                            <p>Girraween NSW 2145</p>
+                            <p>Girraween</p>
+                            <p>NSW 2145</p>
+                            <p>Australia</p>
                         </div>
                     </div>
                 </div>

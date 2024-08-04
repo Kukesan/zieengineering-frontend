@@ -1,14 +1,17 @@
 import React from "react";
 import './header.css';
+import logoSvg from '../../assests/png/landingLogo.png';
+import australiaImg from '../../assests/png/australia.png';
 
 const Header = () => {
   return (
     <header>
       <div className="header-container">
         <div className="header-logo">
-          <img className="header-logo-img" src="https://media.istockphoto.com/id/1345681613/vector/creative-people-logo-vector-illustration-design-editable-resizable-eps-10.jpg?s=612x612&w=0&k=20&c=9XUHICA1ljbxBcLw8ERp0kDDxLNQ8Bp2yR4aUSS6SBs=" alt="Zie Engineering" />
+          <img className="header-logo-img" src={logoSvg} alt="Zie Engineering" />
         </div>
-        <h3 className='header-heading'>Zie Engineering</h3>
+        <img className="australia-img" src={australiaImg}></img>
+        <h3 className='header-heading'>100% Australian Product</h3>
       </div>
     </header>
   );

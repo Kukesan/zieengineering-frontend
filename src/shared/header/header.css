@@ -11,10 +11,14 @@
 }
 
 .header-logo-img{
-    height: 10vh;
+    height: 7vh;
 }
 
 .header-heading{
     flex: 1;
     text-align: center;
+}
+
+.australia-img{
+    height: 5vh;
 }

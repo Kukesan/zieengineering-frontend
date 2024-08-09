@@ -7,6 +7,7 @@ import About from "../../components/about/about";
 import Services from "../../components/services/services";
 import Gallery from "../../components/gallery/gallery";
 import Review from "../../components/review/review";
+import ValuesSection from "../../components/mission/valuesSection";
 
 export default function Home() {
     const homeRef = useRef(null);
@@ -41,6 +42,7 @@ export default function Home() {
                 <Header scrollToSection={scrollToSection} />
                 <Landing scrollToSection={scrollToSection} />
             </div>
+            <ValuesSection />
             <div ref={aboutUsRef}>
                 <About />
             </div>

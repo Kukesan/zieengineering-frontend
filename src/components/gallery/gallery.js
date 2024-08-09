@@ -2,15 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import './gallery.css';
 
 const galleryData = [
-    { src: 'https://www.cncmasters.com/wp-content/uploads/2021/07/cnc-day-in-life-1.jpg', alt: 'Image 1' },
-    { src: 'https://www.tempstarstaffing.com/2022/10/20/what-is-a-cnc-operator-and-what-do-they-do/worker-in-metal-industry-operating-a-modern-cnc-machine/', alt: 'Image 2' },
-    { src: 'https://img.newequipment.com/files/base/ebm/newequipment/image/2022/08/AdobeStock_327876982.62fc089a2325d.png?auto=format%2Ccompress&w=320', alt: 'Image 3' },
-    { src: 'https://25784863.fs1.hubspotusercontent-eu1.net/hub/25784863/hubfs/CaseStudies_Header-1.png?width=575&name=CaseStudies_Header-1.png', alt: 'Image 4' },
-    { src: 'https://t4.ftcdn.net/jpg/03/36/12/57/360_F_336125721_lMvrxLFIMf2UfVm0zozrYKLmYtwvxmzZ.jpg', alt: 'Image 5' },
-    { src: 'https://t3.ftcdn.net/jpg/03/10/56/60/360_F_310566044_npH4T8KUv0Siv2JkAdVGOAsExqyEpsxT.jpg', alt: 'Image 6' },
-    { src: 'https://s3.envato.com/files/293149165/DSC_6842.jpg', alt: 'Image 7' },
-    { src: 'https://previews.123rf.com/images/primagefactory/primagefactory1708/primagefactory170800511/83698403-back-view-photo-of-elegant-woman-lathe-worker-working-at-milling-machine-department-and-using-pliers.jpg', alt: 'Image 8' },
-    { src: 'https://static3.bigstockphoto.com/0/9/2/large1500/290005882.jpg', alt: 'Image 9' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/5e9589799aea1High-precision-turning-components.jpg', alt: 'Image 1' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/5e958ad8c738fBronze-CNC-Turned-Parts.jpg', alt: 'Image 2' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/CNC-machining-1280x720.jpg', alt: 'Image 3' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/CNC-Threading.jpeg', alt: 'Image 4' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/cnc-turned-components-machining.jpg', alt: 'Image 5' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/cnc-turned-components.jpg', alt: 'Image 6' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/CNC-turning-1.jpg', alt: 'Image 7' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/cnc-turning-center-3d-graphic.jpeg', alt: 'Image 8' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/depositphotos_18592409-stock-photo-cnc-machinery-detail.jpg', alt: 'Image 9' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/Hub-and-Rings.jpg', alt: 'Image 10' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/ply-1.jpg', alt: 'Image 11' },
+    { src: 'https://zieengineeringimages.s3.amazonaws.com/shutterstock_304656242.jpg', alt: 'Image 12' },
 ];
 
 const Gallery = () => {

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './gallery.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const galleryData = [
     { src: 'https://zieengineeringimages.s3.amazonaws.com/5e9589799aea1High-precision-turning-components.jpg', alt: 'Image 1' },
@@ -64,7 +65,7 @@ const Gallery = () => {
             <div className="gallery-grid">
                 {galleryData.map((image, index) => (
                     <div key={index} className={`gallery-item item-${index}`} onClick={() => openModal(image)}>
-                        <img src={image.src} alt={image.alt} />
+                        <LazyLoadImage src={image.src} alt={image.alt} />
                     </div>
                 ))}
             </div>
@@ -72,7 +73,7 @@ const Gallery = () => {
             {modalImage && (
                 <div className="modal" style={{ display: 'flex' }} onClick={closeModal}>
                     <span className="close" onClick={closeModal}>&times;</span>
-                    <img className="modal-content" src={modalImage.src} alt={modalImage.alt} />
+                    <LazyLoadImage className="modal-content" src={modalImage.src} alt={modalImage.alt} />
                 </div>
             )}
         </div>

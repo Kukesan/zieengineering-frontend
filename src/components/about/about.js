@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import './about.css';
 
 const aboutImg1 = 'https://zieengineeringimages.s3.amazonaws.com/2.jpg';
@@ -55,9 +56,9 @@ const About = () => {
                 </div>
             )}
             <div className="images-container">
-                <img src={aboutImg1} alt="Image 1" className="about-image fade-right" />
-                <img src={aboutImg2} alt="Image 2" className="about-image center-image fade-up" />
-                <img src={aboutImg3} alt="Image 3" className="about-image fade-left" />
+                <LazyLoadImage  src={aboutImg1} alt="Image 1" className="about-image fade-right" />
+                <LazyLoadImage  src={aboutImg2} alt="Image 2" className="about-image center-image fade-up" />
+                <LazyLoadImage  src={aboutImg3} alt="Image 3" className="about-image fade-left" />
             </div>
         </div>
     );

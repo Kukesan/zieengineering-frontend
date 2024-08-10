@@ -80,6 +80,10 @@
     .services-container {
        padding: 20px 0;
     }
+    .services-title {
+        font-size:24px;
+        width: 80%;
+    }
 }
 
 /* Mobile view */
@@ -91,6 +95,7 @@
      }
     .services-title {
         font-size:24px;
+        width: 80%;
     }
 
     .services-grid {

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './about.css';
 
-const aboutImg1 = 'https://www.mtt.uk.com/wp-content/uploads/2019/05/CNC-Mechanical-Engineering-2.jpg';
-const aboutImg2 = 'https://media.licdn.com/dms/image/C5612AQELpbHVzOdkWg/article-cover_image-shrink_720_1280/0/1520164504536?e=2147483647&v=beta&t=sOTEnnKAeUnf1-XumGtRulEjF5UhI-8Qzc6UJaoeyXw';
-const aboutImg3 = 'https://img1.wsimg.com/isteam/ip/f7671400-0bfd-4fde-801d-c7a0f186231f/cnc-machinist.jpg';
+const aboutImg1 = 'https://zieengineeringimages.s3.amazonaws.com/2.jpg';
+const aboutImg2 = 'https://zieengineeringimages.s3.amazonaws.com/20240807_100927.jpg';
+const aboutImg3 = 'https://zieengineeringimages.s3.amazonaws.com/eszterga-se-cam-pro.jpg';
 
 const About = () => {
     const containerRef = useRef(null);

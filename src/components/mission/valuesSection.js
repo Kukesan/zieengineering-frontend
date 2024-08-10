@@ -10,12 +10,11 @@ const ValuesSection = () => {
   const valuesSectionRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-        } else {
-          entry.target.classList.remove('visible');
+          observer.unobserve(entry.target);  // Stop observing the element after the first trigger
         }
       });
     });

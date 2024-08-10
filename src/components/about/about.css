@@ -88,7 +88,7 @@
 .about-image {
     width: 31%;
     margin: 10px 0;
-    height: 46vh;
+    height: 22vw;
     border-radius: 15px;
 }
 
@@ -104,7 +104,7 @@
 
     .about-image {
         width: 31%;
-        height: 40vh;
+        height: 26vw;
     }
 }
 
@@ -127,12 +127,19 @@
         width: 98%;
     }
 
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
     .about-image {
-        width: 31%;
-        height: 24vh;
+        width: 80%;
+        height: 50vw;
     }
 
     .center-image {
-        margin-top: 8vh;
+        margin: 0;
     }
 }

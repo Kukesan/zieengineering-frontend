@@ -37,12 +37,12 @@
 }
 
 .value-title {
-  font-size: 1.5em;
-  margin: 10px 0;
+  font-size: 22px;
+  margin: 8px 0;
 }
 
 .value-description {
-  font-size: 1em;
+  font-size: 16px;
   color: #666;
 }
 
@@ -52,10 +52,28 @@
     width: 30%;
     max-width: none;
   }
+  .value-title {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .value-description {
+    font-size: 14px;
+    color: #666;
+  }
 }
 
 @media (max-width: 480px) {
   .value-card {
     width: 50%;
+  }
+  .value-title {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .value-description {
+    font-size: 14px;
+    color: #666;
   }
 }

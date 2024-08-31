@@ -33,12 +33,12 @@ export default function Footer () {
                     <p className="description">
                         At Zie Engineering, we excel in delivering high-quality, precise, and innovative CNC machined parts that meet the diverse needs of our clients.
                     </p>
-                    <div className="social-icons">
+                    {/* <div className="social-icons">
                         <img src={facebookSvg} alt="Facebook" className='social-icon' />
                         <img src={twitterSvg} alt="Twitter" className='social-icon' />
                         <img src={linkedinSvg} alt="LinkedIn" className='social-icon' />
                         <img src={instagramSvg} alt="Instagram" className='social-icon' />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

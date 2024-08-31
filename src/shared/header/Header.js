@@ -29,9 +29,9 @@ const Header = ({ scrollToSection }) => {
                     <div className="navbar-item">
                         <a onClick={() => scrollToSection("gallery")} className="navbar-link">Gallery</a>
                     </div>
-                    <div className="navbar-item">
+                    {/* <div className="navbar-item">
                         <a onClick={() => scrollToSection("reviews")} className="navbar-link">Reviews</a>
-                    </div>
+                    </div> */}
                     <div className="navbar-item">
                         <a onClick={() => scrollToSection("contact")} className="navbar-link">Contact Us</a>
                     </div>

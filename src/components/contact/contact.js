@@ -7,7 +7,7 @@ import phoneImg from "../../assests/svg/phone.svg";
 import emailImg from "../../assests/svg/email.svg";
 import locationImg from "../../assests/svg/location.svg";
 
-export default function Contact () {
+export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -153,6 +153,7 @@ export default function Contact () {
                     <div className="info-item">
                         <img className="info-icon" src={emailImg} alt="Email" />
                         <div>
+                            <p>admin@zieengineering.com</p>
                             <p>zieengineering20@gmail.com</p>
                             <span>Help Email support</span>
                         </div>
@@ -160,7 +161,7 @@ export default function Contact () {
                     <div className="info-item">
                         <img className="info-icon" src={locationImg} alt="Location" />
                         <div>
-                            <p>Unit 7, 17A </p>
+                            <p>Unit 17, 17A </p>
                             <p>Amax Ave</p>
                             <p>Girraween</p>
                             <p>NSW 2145</p>

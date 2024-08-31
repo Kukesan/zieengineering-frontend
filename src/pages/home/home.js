@@ -52,9 +52,9 @@ export default function Home() {
             <div ref={galleryRef}>
                 <Gallery />
             </div>
-            <div ref={reviewsRef}>
+            {/* <div ref={reviewsRef}>
                 <Review />
-            </div>
+            </div> */}
             <div ref={contactRef}>
                 <Contact />
             </div>

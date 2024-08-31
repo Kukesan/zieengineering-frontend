@@ -8,12 +8,12 @@ const Services = () => {
     const servicesData = [
         {
             icon: "📦",
-            title: "CNC Turning",
+            title: "CNC Milling",
             description: "Our CNC Milling services use advanced computer-controlled rotary cutters to remove material from workpieces, creating precise and complex parts tailored to your specifications."
         },
         {
             icon: "⚙️",
-            title: "CNC Milling",
+            title: "CNC Turning",
             description: "Our CNC Turning services employ precision lathe tools to rotate workpieces while shaping them with cutting tools, resulting in accurate and efficient production of cylindrical components."
         },
         {
